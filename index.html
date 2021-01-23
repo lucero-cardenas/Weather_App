@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/f0f7ea9b9c.js" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" style="max-width: 50rem">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-10">
+              <form id= "city-search-form">
+                <input
+                  id="city-input"
+                  type="text"
+                  placeholder="Enter a city"
+                  autocomplete="yes"
+                />
+                <input type = "submit" value="🔍"/>
+                <input type = "button" id = "current_location" value="Current location"/>
+              </form>
+            </div>
+            <div class="col-2 right">
+              <h4 class = "units"><a href=# id="unit-c" class="strong">°C</a> | <a href=# id= "unit-f">°F</a></h4>
+            </div>
+          </div>
+        </br>
+          <div class="row">
+            <div class="col-6">
+              <h1 class="card-title" id= "shown-city">Uppsala</h1>
+              <h4 class="card-subtitle mb-2 text-muted" id="current-date-time">Today - Sun, Dec 27, 2020</h4>
+              <h3 class= "card-subtitle mb-2 text-muted" id="humidity">Humidity: ###</h3>
+              <br/>
+              <h3 class= "card-subtitle mb-2 text-muted" id="wind">Wind speed: ###</h3>
+            </div>
+            <div class="col-6 currTemp">
+              <i class="fas fa-cloud"></i><h2 id="curr-temp">4</h2>
+            </div>
+          </div>
+          </br>
+            <div class="row forecast">
+              <div class="col-2 first">
+               <i class="fas fa-cloud"></i>
+               <p class="card-text topLow"><strong>5</strong> 2</p>
+               <p class="card-text day">Mon</p>
+             </div>
+             <div class="col-2 second">
+              <i class="fas fa-cloud-showers-heavy"></i>
+               <p class="card-text topLow"><strong>3</strong> 2</p>
+               <p class="card-text day">Tue</p>
+              </div>
+             <div class="col-2 third">
+               <i class="fas fa-cloud-showers-heavy"></i>
+               <p class="card-text topLow"><strong>5</strong> 3</p>
+               <p class="card-text day">Wed</p>
+             </div>
+             <div class="col-2 fourth">
+               <i class="fas fa-cloud-showers-heavy"></i>
+               <p class="card-text topLow"><strong>3</strong> 1</p>
+               <p class="card-text day">Thu</p>
+             </div>
+             <div class="col-2 fifth">
+               <i class="fas fa-snowflake"></i>
+               <p class="card-text topLow"><strong>2</strong> -1</p>
+               <p class="card-text day">Fri</p>
+             </div>
+             <div class="col-2 sixth">
+               <i class="fas fa-snowflake"></i>
+               <p class="card-text topLow"><strong>1</strong> -1</p>
+               <p class="card-text day">Sat</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="coder">
+      Coded by
+      <a href="mailto:lucero.cardenas@gmail.com" target="_blank">Lucero Cardenas</a>
+    </p>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
