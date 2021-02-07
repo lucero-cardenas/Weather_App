@@ -38,7 +38,7 @@ p {
 .currTemp,
 h2,
 .desc-image {
-  font-size: 80px;
+  font-size: 100px;
   text-align: center;
 }
 .desc {
@@ -54,20 +54,20 @@ h2,
   color: default;
 }
 
-div .desc-image,
-div .temp,
-div .units {
-  display: inline;
-}
 #feels-like {
   text-align: left;
 }
 
-.units {
-  position: relative;
-  left: 5px;
-  bottom: 28px;
+div .desc-image,
+div .temp {
+  display: inline;
 }
+
+div .units-max-min {
+  position: relative;
+  top: 35px;
+}
+
 .units a {
   color: #000000;
 }
@@ -76,11 +76,11 @@ div .units {
   font-size: 20px;
   text-align: center;
 }
-.forecast h4 {
+#forecast h4 {
   font-size: 40px;
   text-align: center;
 }
-.forecast p {
+#forecast p {
   text-align: center;
 }
 .coder {
