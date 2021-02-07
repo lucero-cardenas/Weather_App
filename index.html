@@ -21,10 +21,10 @@
   </head>
   <body>
     <div class="container">
-      <div class="card" style="max-width: 50rem">
+      <div class="card" id="main" style="max-width:60rem; min-width:40rem;">
         <div class="card-body">
           <div class="row">
-            <div class="col-10">
+            <div class="col-12">
               <form id= "city-search-form">
                 <input
                   id="city-input"
@@ -36,56 +36,61 @@
                 <input type = "button" id = "current_location" value="Current location"/>
               </form>
             </div>
-            <div class="col-2 right">
-              <h4 class = "units"><a href=# id="unit-c" class="strong">°C</a> | <a href=# id= "unit-f">°F</a></h4>
-            </div>
           </div>
-        </br>
-          <div class="row">
-            <div class="col-6">
-              <h1 class="card-title" id= "shown-city">Uppsala</h1>
-              <h4 class="card-subtitle mb-2 text-muted" id="current-date-time">Today - Sun, Dec 27, 2020</h4>
-              <h3 class= "card-subtitle mb-2 text-muted" id="humidity">Humidity: ###</h3>
-              <br/>
-              <h3 class= "card-subtitle mb-2 text-muted" id="wind">Wind speed: ###</h3>
+          <div class="row city-weather">
+            <div class="card col" id="city-date" style="min-width:16rem; max-width:26rem;">
+              <h1 class="card-title" id= "shown-city">--</h1>
+              <h4 class="card-subtitle mb-2 text-muted" id="current-date-time">Sun, Dec 27, 2020</h4>
+              <h3 class= "card-subtitle mb-2 text-muted" id="humidity">Humidity: --</h3>
+              <h3 class= "card-subtitle mb-2 text-muted" id="wind">Wind speed: --</h3>
             </div>
-            <div class="col-6 currTemp">
-              <i class="fas fa-cloud"></i><h2 id="curr-temp">4</h2>
-            </div>
+            <div class="col desc-col" style="min-width:10rem; max-width:20rem;">
+                <div class="row desc-image"><i class="fas fa-cloud"></i></div>
+                <div class="row desc"><h4 class= "card-subtitle mb-2 text-muted" id="description">Description: --</h4></div>
+              </div>
+              <div class="col currTemp" style="min-width:14rem; max-width:14rem;">
+                <div class="row">
+                  <span class="col temp"><h2 id="curr-temp">--</h2></span>
+                  <span class="col units"><h4 class = "units"><a href=# id="unit-c" class="strong">°C</a> | <a href=# id= "unit-f" class="soft">°F</a></h4></span>
+                </div>
+                <div class="row feels"><h4 class= "card-subtitle mb-2 text-muted" id="feels-like">Feels like: --</h4></div>
+              </div>
+            </div> 
           </div>
           </br>
             <div class="row forecast">
               <div class="col-2 first">
-               <i class="fas fa-cloud"></i>
+               <h4><i class="fas fa-cloud"></i></h4>
                <p class="card-text topLow"><strong>5</strong> 2</p>
                <p class="card-text day">Mon</p>
              </div>
              <div class="col-2 second">
-              <i class="fas fa-cloud-showers-heavy"></i>
+               <h4><i class="fas fa-cloud-showers-heavy"></i></h4>
                <p class="card-text topLow"><strong>3</strong> 2</p>
                <p class="card-text day">Tue</p>
               </div>
              <div class="col-2 third">
-               <i class="fas fa-cloud-showers-heavy"></i>
+               <h4><i class="fas fa-cloud-showers-heavy"></i></h4>
                <p class="card-text topLow"><strong>5</strong> 3</p>
                <p class="card-text day">Wed</p>
              </div>
              <div class="col-2 fourth">
-               <i class="fas fa-cloud-showers-heavy"></i>
+               <h4><i class="fas fa-cloud-showers-heavy"></i></h4>
                <p class="card-text topLow"><strong>3</strong> 1</p>
                <p class="card-text day">Thu</p>
              </div>
              <div class="col-2 fifth">
-               <i class="fas fa-snowflake"></i>
+               <h4><i class="fas fa-snowflake"></i></h4>
                <p class="card-text topLow"><strong>2</strong> -1</p>
                <p class="card-text day">Fri</p>
              </div>
              <div class="col-2 sixth">
-               <i class="fas fa-snowflake"></i>
+               <h4><i class="fas fa-snowflake"></i></h4>
                <p class="card-text topLow"><strong>1</strong> -1</p>
                <p class="card-text day">Sat</p>
             </div>
           </div>
+          </br>
         </div>
       </div>
       <p class="coder">

@@ -1,50 +1,91 @@
 a {
   text-decoration: none;
 }
-div {
-  margin: 0;
-}
 form {
   margin: 10px;
 }
 h2,
 h3 {
   display: inline;
-  margin: 0 auto;
 }
 h3 {
   font-size: medium;
 }
-i {
-  display: inline;
+h4 {
+  font-size: 20px;
 }
+
 p {
   margin: 0;
 }
-.card {
+#main {
   display: block;
-  margin: 30px auto;
+  margin: 20px auto;
   background: linear-gradient(to top, #00ffd5ab 0%, #00d9ff86 100%);
+}
+.card-body {
+  margin: 10px auto;
+  padding: 30px auto;
+}
+.card {
+  border: none;
+  background: none;
+}
+
+.city-weather {
+  margin: 5px;
+}
+.currTemp,
+h2,
+.desc-image {
+  font-size: 80px;
+  text-align: center;
+}
+.desc {
+  text-align: center;
+}
+.strong {
+  font-weight: 800;
+  cursor: default;
+}
+
+.soft:hover {
+  text-decoration: underline;
+  color: default;
+}
+
+div .desc-image,
+div .temp,
+div .units {
+  display: inline;
+}
+#feels-like {
+  text-align: left;
+}
+
+.units {
+  position: relative;
+  left: 5px;
+  bottom: 28px;
+}
+.units a {
+  color: #000000;
+}
+
+.topLow {
+  font-size: 20px;
+  text-align: center;
+}
+.forecast h4 {
+  font-size: 40px;
+  text-align: center;
+}
+.forecast p {
+  text-align: center;
 }
 .coder {
   text-align: center;
 }
-.forecast {
-  text-align: center;
-}
 .right {
   text-align: right;
-}
-.currTemp,
-h2 {
-  font-size: 100px;
-}
-.topLow {
-  font-size: 20px;
-}
-.forecast i {
-  font-size: 40px;
-}
-.strong {
-  font-weight: 800;
 }
